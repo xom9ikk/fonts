@@ -1,7 +1,7 @@
 .textarea {
   width: 56vw;
   padding: 7% 2% 0;
-  font-size: 6.7vw;
+  font-size: 6.2vw;
   line-height: 1;
   text-align: left;
   color: #383b3f;
@@ -10,10 +10,14 @@
   outline: none;
   background: inherit;
   overflow: hidden;
-  transition: color .5s;
+  transition: all .25s ease-out;
   &--using {
+    opacity: 0;
     width: 100%;
     text-align: center;
+  }
+  &--visible {
+    opacity: 1
   }
   &::selection {
     background: #383b3f;

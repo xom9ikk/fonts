@@ -3,16 +3,16 @@ const fs = require('fs');
 const result = {};
 
 data.items.forEach(el=>{
-  const files = {};
-  Object.keys(el.files).forEach((key)=>{
-    files[key] = el.files[key].replace('http://fonts.gstatic.com/s/','')
-  })
+  // const files = {};
+  // Object.keys(el.files).forEach((key)=>{
+  //   files[key] = el.files[key].replace('http://fonts.gstatic.com/s/','')
+  // })
   if(!result[el.category]) {
     result[el.category] = [];
   }
   result[el.category].push({
     family: el.family,
-    files,
+    variants: Object.keys(el.files),
   })
 })
 

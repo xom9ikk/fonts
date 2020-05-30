@@ -6,4 +6,5 @@ import {
 export interface IRootState {
   palette: IPalette,
   theme: EnumTheme,
+  fonts: Object,
 }
