@@ -17,10 +17,15 @@ main {
   transition: background .1s ease-in-out;
   &--light {
     background: $white;
-    //.card__color {
-    //  box-shadow:  20px 20px 60px #d9d9d9,
-    //  -20px -20px 60px #ffffff;
-    //}
+    .textarea {
+      color: #383b3f;
+    }
+    .card {
+      background-color: $white;
+      &__title {
+        color: #383b3f;
+      }
+    }
     .logo__text {
       color: $primary-text;
     }
@@ -75,10 +80,15 @@ main {
   }
   &--dark {
     background: $dark;
-    //.card__color {
-    //  box-shadow:  20px 20px 60px #353535,
-    //  -20px -20px 60px #222222;
-    //}
+    .textarea {
+      color: #edeeef;
+    }
+    .card {
+      background-color: #262a30;
+      &__title {
+        color: #edeeef;
+      }
+    }
     .logo__text {
       color: $white;
     }
