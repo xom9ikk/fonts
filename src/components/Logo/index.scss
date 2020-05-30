@@ -1,0 +1,22 @@
+.logo {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  &__square {
+    background: #fac950;
+    width: 11px;
+    height: 11px;
+    border-radius: 25%;
+    margin-top: -2px;
+    &--external {
+      background: #f26c4b;
+    }
+  }
+  &__text {
+    padding-left: 3px;
+    font-size: 16px;
+    font-family: "Nunito Extra Bold", sans-serif;
+  }
+}

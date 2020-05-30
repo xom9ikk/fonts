@@ -1,0 +1,135 @@
+@import './variables/colors';
+@import './base';
+@import '../../index';
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  height: calc(100% - 160px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 100vh;
+  transition: background .1s ease-in-out;
+  &--light {
+    background: $white;
+    //.card__color {
+    //  box-shadow:  20px 20px 60px #d9d9d9,
+    //  -20px -20px 60px #ffffff;
+    //}
+    .logo__text {
+      color: $primary-text;
+    }
+    .nav__link {
+      color: $text;
+      :visited {
+        color: $primary-text;
+      }
+      &--active {
+        color: $primary-text;
+      }
+    }
+    .menu {
+      &__separator {
+        background: #d3d3d3;
+      }
+      &__button {
+        background: #edeff1;
+      }
+    }
+    //.card {
+    //  &__text {
+    //    color: #383b3f;
+    //  }
+    //  &__gradient-text {
+    //    color: #383b3f;
+    //  }
+    //}
+    .controls {
+      &--button {
+        color: #5d656f;
+      }
+      &--generate {
+        background: #d1d7e0;
+        &:hover {
+          background: #ccd1db;
+        }
+      }
+      &--back {
+        background: #eaedf3;
+        &:hover {
+          background: #e5e8ee;
+        }
+      }
+      &--copy {
+        background: #eaedf3;
+        &:hover {
+          background: #e5e8ee;
+        }
+      }
+    }
+  }
+  &--dark {
+    background: $dark;
+    //.card__color {
+    //  box-shadow:  20px 20px 60px #353535,
+    //  -20px -20px 60px #222222;
+    //}
+    .logo__text {
+      color: $white;
+    }
+    .nav__link {
+      color: #a3a3a3;
+      :visited {
+        color: #d7dae0;
+      }
+      &--active {
+        color: #d7dae0;
+      }
+    }
+
+    .menu {
+      &__separator {
+        background: #333942;
+      }
+      &__button {
+        background: #30343a;
+      }
+    }
+    //.card {
+    //  &__text {
+    //    color: #fafafa;
+    //  }
+    //  &__gradient-text {
+    //    color: #fafafa;
+    //  }
+    //}
+    .controls {
+      &--button {
+        color: #f5f5f5;
+      }
+      &--generate {
+        background: #333942;
+        &:hover {
+          background: #383e47;
+        }
+      }
+      &--back {
+        background: #282d34;
+        &:hover {
+          background: #2d3239;
+        }
+      }
+      &--copy {
+        background: #282d34;
+        &:hover {
+          background: #2d3239;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Nunito Extra Light";
+  src: url('../../assets/fonts/Nunito-ExtraLight.woff2') format('woff2'),
+  url("../../assets/fonts/Nunito-ExtraLight.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Nunito Light";
+  src: url('../../assets/fonts/Nunito-Light.woff2') format('woff2'),
+  url("../../assets/fonts/Nunito-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Nunito Regular";
+  src: url('../../assets/fonts/Nunito-Regular.woff2') format('woff2'),
+  url("../../assets/fonts/Nunito-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Nunito Semi Bold";
+  src: url('../../assets/fonts/Nunito-SemiBold.woff2') format('woff2'),
+  url("../../assets/fonts/Nunito-SemiBold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Nunito Bold";
+  src: url('../../assets/fonts/Nunito-Bold.woff2') format('woff2'),
+  url("../../assets/fonts/Nunito-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Nunito Extra Bold";
+  src: url('../../assets/fonts/Nunito-ExtraBold.woff2') format('woff2'),
+  url("../../assets/fonts/Nunito-ExtraBold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  font-family: "Nunito Regular", "Nunito Medium", 'Open Sans', sans-serif;
+  background-color: $white;
+  -webkit-appearance: none;
+  margin: 0px;
+  letter-spacing: 0.3px;
+  -moz-user-select: none; /* Mozilla Firefox */
+  -ms-user-select: none; /* Internet Explorer (не поддерживается) */
+  -o-user-select: none; /* Opera Presto (не поддерживается) */
+  -webkit-user-select: none; /* Google Chrome, Opera Next, Safari */
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button {
+  outline: none;
+  &:hover:enabled {
+    cursor: pointer;
+  }
+}
+
+

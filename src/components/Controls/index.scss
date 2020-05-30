@@ -1,0 +1,53 @@
+.controls {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 25rem;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  overflow: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+  &--open {
+    opacity: 1;
+  }
+  &--button {
+    font-size: 14px;
+    font-family: "Nunito Light", sans-serif;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    img {
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+      transition: transform .2s;
+    }
+  }
+  &--generate {
+    flex: 0 0 70%;
+    &:hover {
+      img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &--back {
+    padding: 10px 12px;
+    img {
+      margin-right: 0;
+    }
+  }
+  &--copy {
+    padding: 10px 12px;
+    img {
+      margin-right: 0;
+    }
+  }
+}

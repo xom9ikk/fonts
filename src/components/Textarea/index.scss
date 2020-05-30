@@ -1,0 +1,22 @@
+.textarea {
+  width: 56vw;
+  padding: 7% 2% 0;
+  font-size: 6.7vw;
+  line-height: 1;
+  text-align: left;
+  color: #383b3f;
+  resize: none;
+  border: none;
+  outline: none;
+  background: inherit;
+  overflow: hidden;
+  transition: color .5s;
+  &--using {
+    width: 100%;
+    text-align: center;
+  }
+  &::selection {
+    background: #383b3f;
+    color: #fafafa;
+  }
+}

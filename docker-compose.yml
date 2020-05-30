@@ -1,0 +1,20 @@
+version: "3.5"
+services:
+  fonts-prod:
+    image: fonts-prod
+    container_name: fonts-prod
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "172.50.9.1:8080:80"
+    networks:
+      fonts-prod_net:
+        ipv4_address: 172.50.9.11
+
+networks:
+  fonts-prod_net:
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.50.9.0/24"

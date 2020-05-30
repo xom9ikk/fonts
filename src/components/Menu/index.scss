@@ -1,0 +1,67 @@
+.menu {
+  $block: &;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  &__icon {
+    height: 24px;
+    width: 24px;
+    &:hover {
+      cursor: pointer;
+    }
+    transition: transform .5s ease-in-out;
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+  }
+  &__element-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    transition: margin-right .2s ease-in-out;
+    & img {
+      height: 20px;
+      width: 20px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &__separator {
+    height: 30px;
+    width: 1px;
+    margin: 0;
+    transition: margin .5s ease-in-out;
+  }
+  &__button {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 100px;
+    padding: .75rem 1rem .625rem;
+    cursor: pointer;
+  }
+  &__open {
+    .menu__icon {
+      transform: rotate(-90deg);
+    }
+    .menu__content {
+      width: 260px;
+      opacity: 1;
+    }
+    .menu__element-wrapper {
+      margin-right: 20px;
+    }
+    .menu__separator {
+      margin: 0px 14px;
+    }
+  }
+}
