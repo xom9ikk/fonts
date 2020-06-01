@@ -9,7 +9,7 @@
   outline: none;
   background: inherit;
   overflow: hidden;
-  transition: all .25s ease-out;
+  transition: opacity .25s ease-out;
   &--using {
     opacity: 0;
     width: 100%;
