@@ -48,6 +48,7 @@
     border-radius: 100px;
     padding: .75rem 1rem .625rem;
     cursor: pointer;
+    transition: background .3s ease-in-out;
   }
   &__open {
     .menu__icon {

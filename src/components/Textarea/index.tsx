@@ -1,15 +1,17 @@
 /* eslint-disable jsx-a11y/no-autofocus */
 import React, { FC, useEffect, useState } from 'react';
+import { fontWeight } from '../../types';
 
 interface ITextarea {
   isShow: boolean;
-  fontFamily: string;
+  family: string;
+  weight: string;
   placeholder: string;
   onStartTyping: ()=>void;
 }
 
 export const Textarea: FC<ITextarea> = ({
-  isShow, fontFamily, placeholder, onStartTyping,
+  isShow, family, weight, placeholder, onStartTyping,
 }) => {
   const [text, setText] = useState<string>('');
   const [classes, setClasses] = useState<Array<string>>(['textarea']);
@@ -39,7 +41,7 @@ export const Textarea: FC<ITextarea> = ({
     if (text) {
       setClasses((prev) => [...prev, 'textarea--using']);
     }
-  }, [fontFamily, text, isShow]);
+  }, [family, text, isShow]);
 
   // useEffect(() => {
   //   if (text) {
@@ -61,7 +63,8 @@ export const Textarea: FC<ITextarea> = ({
         spellCheck="false"
         autoFocus
         placeholder={placeholder.slice(0, end)}
-        style={{ fontFamily }}
+        // @ts-ignore
+        style={{ fontFamily: family, fontWeight: fontWeight[weight] }}
         onChange={(event) => {
           setText(event.target.value);
           onStartTyping();

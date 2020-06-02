@@ -12,6 +12,7 @@ export const Menu: FC = () => {
   const handlerClick = () => {
     setIsOpen((prev) => !prev);
   };
+  const handleInfoClick = () => { };
   const handlerThemeClick = () => {
     const newTheme = isDark ? EnumTheme.Light : EnumTheme.Dark;
     dispatch(ThemeEffects.saveTheme(newTheme));
@@ -38,16 +39,21 @@ export const Menu: FC = () => {
           <img
             src="/svg/info.svg"
             alt="menu"
-            onClick={handlerThemeClick}
+            onClick={handleInfoClick}
           />
         </div>
         <div className="menu__element-wrapper">
-          <div className="menu__button">
+          <a
+            className="menu__button"
+            href="https://colors.xom9ik.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="logo__square logo__square--external" />
             <span className="logo__text">
               ColorXoms
             </span>
-          </div>
+          </a>
         </div>
       </div>
     </div>

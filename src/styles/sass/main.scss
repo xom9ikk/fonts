@@ -44,16 +44,11 @@ main {
       }
       &__button {
         background: #edeff1;
+        &:hover {
+          background: #e3e5e7;
+        }
       }
     }
-    //.card {
-    //  &__text {
-    //    color: #383b3f;
-    //  }
-    //  &__gradient-text {
-    //    color: #383b3f;
-    //  }
-    //}
     .controls {
       &--button {
         color: #5d656f;
@@ -108,16 +103,11 @@ main {
       }
       &__button {
         background: #30343a;
+        &:hover{
+          background: #3a3e44;
+        }
       }
     }
-    //.card {
-    //  &__text {
-    //    color: #fafafa;
-    //  }
-    //  &__gradient-text {
-    //    color: #fafafa;
-    //  }
-    //}
     .controls {
       &--button {
         color: #f5f5f5;
