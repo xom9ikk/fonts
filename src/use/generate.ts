@@ -15,10 +15,10 @@ const getRandomType = () => {
 
 const getFontsByType = (fontList: Object, needType?: string) => {
   const randomType = getRandomType();
-  let [type] = randomType;
-  const [, typeName] = randomType;
+  let [type, typeName] = randomType;
   if (!isAny(needType)) {
     type = needType?.toLowerCase();
+    typeName = needType;
   }
   // @ts-ignore
   return [fontList[type], typeName];
