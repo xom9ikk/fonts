@@ -5,6 +5,7 @@ export const fontType = {
   Handwriting: 'handwriting',
   Monospace: 'monospace',
 };
+export const fontTypes = Object.keys(fontType);
 
 export const fontWeight = {
   ExtraLight: 100,
@@ -17,10 +18,4 @@ export const fontWeight = {
   ExtraBold: 800,
   ExtraBlack: 900,
 };
-
-export interface IFont {
-  name: string;
-  type: string;
-  weight: string;
-  isItalic: boolean;
-}
+export const fontWeights = Object.keys(fontWeight);

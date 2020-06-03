@@ -4,14 +4,14 @@ interface IControls {
   isOpen: boolean;
   onGenerate: ()=>void,
   onBack: ()=>void,
-  onGoTo: ()=>void,
+  hrefLink: string,
 }
 
 export const Controls: FC<IControls> = ({
   isOpen,
   onGenerate,
   onBack,
-  onGoTo,
+  hrefLink,
 }) => (
   <div className={`controls ${isOpen ? 'controls--open' : ''}`}>
     <button
@@ -27,13 +27,13 @@ export const Controls: FC<IControls> = ({
       <img src="/svg/refresh.svg" alt="refresh" />
       Generate
     </button>
-    <button
+    <a
+      href={hrefLink}
+      target="_blank"
+      rel="noopener noreferrer"
       className="controls--button controls--copy"
-      onClick={() => {
-        onGoTo();
-      }}
     >
-      <img src="/svg/goto.svg" alt="tick" />
-    </button>
+      <img src="/svg/goto.svg" alt="link" />
+    </a>
   </div>
 );

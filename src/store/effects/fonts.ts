@@ -1,11 +1,11 @@
-import { FontsActions } from '../actions';
+import { FontListActions } from '../actions';
 
 
 const fetchFontList = () => async (dispatch: Function) => {
   try {
     const response = await fetch('/fonts.json');
     const fonts = await response.json();
-    dispatch(FontsActions.setFontList(fonts));
+    dispatch(FontListActions.setFontList(fonts));
   } catch (error) {
     console.error('fetchFontList', error);
   }

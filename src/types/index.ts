@@ -1,3 +1,3 @@
-export * from './palette';
+export * from './fonts';
 export * from './theme';
-export * from './font';
+export * from './fontList';

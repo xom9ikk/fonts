@@ -1,10 +1,10 @@
 import {
   EnumTheme,
-  IPalette,
+  IFonts,
 } from '../../types';
 
 export interface IRootState {
-  palette: IPalette,
+  fonts: IFonts,
   theme: EnumTheme,
-  fonts: Object,
+  fontList: Object,
 }

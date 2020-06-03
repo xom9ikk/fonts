@@ -18,17 +18,44 @@
     height: 100px;
     opacity: 1;
   }
-  &__text {
+  &__content {
     display: flex;
     flex-direction: column;
   }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    margin-top: -120px;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    &--open {
+      margin-top: 120px;
+      opacity: 1;
+    }
+  }
   &__filter {
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    &--open {
+      opacity: 1;
+    }
+  }
+  &__switcher {
     cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
   }
   &__title {
     margin: 0 0 8px 0;
     font-size: 26px;
-    line-height: 22px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 230px;
+    white-space: nowrap;
   }
   &__subtitle {
     margin: 0px;
