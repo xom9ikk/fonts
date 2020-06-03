@@ -43,6 +43,7 @@
     margin: 2.5px;
   }
   &__list {
+    z-index: 1;
     position: absolute;
     padding: 4px 0;
     background-color: #edeff1;
