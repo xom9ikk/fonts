@@ -65,9 +65,6 @@ export const Main: FC = () => {
       setIsShow(false);
     }
   };
-  const goToHandler = () => {
-
-  };
   const currentFont = textareaFonts[textareaFonts.length - 1];
 
   return (
