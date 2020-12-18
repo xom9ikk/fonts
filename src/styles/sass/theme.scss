@@ -1,0 +1,143 @@
+.container {
+  height: 100vh;
+  transition: background .1s ease-in-out;
+  &--light {
+    background: $white;
+    .textarea {
+      color: #383b3f;
+    }
+    .card {
+      background-color: $white;
+      &__title {
+        color: #383b3f;
+      }
+    }
+    .logo__text {
+      color: $primary-text;
+    }
+    .nav__link {
+      color: $text;
+      :visited {
+        color: $primary-text;
+      }
+      &--active {
+        color: $primary-text;
+      }
+    }
+    .menu {
+      &__separator {
+        background: #d3d3d3;
+      }
+      &__button {
+        background: #edeff1;
+        &:hover {
+          background: #e3e5e7;
+        }
+      }
+    }
+    .controls {
+      &--button {
+        color: #5d656f;
+      }
+      &--generate {
+        background: #d1d7e0;
+        &:hover {
+          background: #ccd1db;
+        }
+      }
+      &--back {
+        background: #eaedf3;
+        &:hover {
+          background: #e5e8ee;
+        }
+      }
+      &--copy {
+        background: #eaedf3;
+        &:hover {
+          background: #e5e8ee;
+        }
+      }
+    }
+  }
+  &--dark {
+    background: $dark;
+    .textarea {
+      color: #edeeef;
+    }
+    .card {
+      background-color: #262a30;
+      &__title {
+        color: #edeeef;
+      }
+    }
+    .logo__text {
+      color: $white;
+    }
+    .nav__link {
+      color: #a3a3a3;
+      :visited {
+        color: #d7dae0;
+      }
+      &--active {
+        color: #d7dae0;
+      }
+    }
+
+    .menu {
+      &__separator {
+        background: #333942;
+      }
+      &__button {
+        background: #30343a;
+        &:hover{
+          background: #3a3e44;
+        }
+      }
+    }
+    .controls {
+      &--button {
+        color: #f5f5f5;
+      }
+      &--generate {
+        background: #333942;
+        &:hover {
+          background: #383e47;
+        }
+      }
+      &--back {
+        background: #282d34;
+        &:hover {
+          background: #2d3239;
+        }
+      }
+      &--copy {
+        background: #282d34;
+        &:hover {
+          background: #2d3239;
+        }
+      }
+    }
+    .select {
+      &__title {
+        color: #bebebe;
+      }
+      &__button {
+        background: #333942;
+        color: #f5f5f5;
+        &:hover {
+          background: #383e47;
+        }
+      }
+      &__list {
+        background: #333942;
+      }
+      &__item {
+        background: #333942;
+        color: #f5f5f5;
+        &:hover {
+          background: #383e47;
+        }
+      }
+    }
+  }
+}

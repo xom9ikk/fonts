@@ -52,6 +52,9 @@
     border-radius: 5px;
     display: none;
     box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.04);
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   &__item {
     padding: 8px 10px 8px 10px;

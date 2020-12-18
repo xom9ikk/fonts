@@ -50,7 +50,7 @@
     cursor: pointer;
     transition: background .3s ease-in-out;
   }
-  &__open {
+  &--open {
     .menu__icon {
       transform: rotate(-90deg);
     }

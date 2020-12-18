@@ -1,30 +1,36 @@
-import React, { FC, useState } from 'react';
+import React, { FC } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { IRootState } from '../../store/reducers/state';
 import { EnumTheme } from '../../types';
 import { ThemeEffects } from '../../store/effects';
 
-export const Menu: FC = () => {
+interface IMenu {
+  isOpen: boolean;
+  onClick: () => void;
+}
+
+export const Menu: FC<IMenu> = ({ onClick, isOpen }) => {
   const dispatch = useDispatch();
   const appTheme = useSelector((state: IRootState) => state.theme);
+
   const isDark = appTheme === EnumTheme.Dark;
-  const [isOpen, setIsOpen] = useState(false);
-  const handlerClick = () => {
-    setIsOpen((prev) => !prev);
-  };
+
   const handleInfoClick = () => { };
+
   const handlerThemeClick = () => {
     const newTheme = isDark ? EnumTheme.Light : EnumTheme.Dark;
     dispatch(ThemeEffects.saveTheme(newTheme));
   };
+
   const image = isOpen ? '/svg/close.svg' : '/svg/menu.svg';
+
   return (
-    <div className={`menu ${isOpen ? 'menu__open' : ''}`}>
+    <div className={`menu ${isOpen ? 'menu--open' : ''}`}>
       <img
         src={image}
         alt="menu"
         className="menu__icon"
-        onClick={handlerClick}
+        onClick={onClick}
       />
       <div className="menu__content">
         <span className="menu__separator" />

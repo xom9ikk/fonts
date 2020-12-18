@@ -1,0 +1,45 @@
+$first-breakpoint: 480px;
+
+@media screen and (max-width: $first-breakpoint) {
+  .textarea {
+    height: 130px;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .logo--menu-open {
+    flex: 0;
+    opacity: 0;
+  }
+  .controls {
+    width: 270px;
+    &--generate {
+      flex: 0 0 50%;
+    }
+  }
+  .select {
+    &__button {
+      margin-top: 2px;
+    }
+  }
+  .card {
+    width: 90%;
+    height: 150px;
+    &__filter {
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    &__text {
+      &--open {
+        margin-top: 160px;
+      }
+    }
+    &__title {
+      width: 180px;
+      font-size: 20px;
+    }
+    &__subtitle {
+      width: 180px;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,7 +1,10 @@
 .header {
+  position: fixed;
+  left: 0;
+  right: 0;
   display: flex;
   flex: 0 1;
-  height: 10rem;
+  height: 160px;
   padding: 0 5%;
   align-items: center;
 }

@@ -4,6 +4,8 @@
   justify-content: flex-start;
   flex-direction: row;
   align-items: center;
+  overflow: hidden;
+  transition: opacity .75s ease-in-out;
   &__square {
     background: #fac950;
     width: 11px;
