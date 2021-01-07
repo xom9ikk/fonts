@@ -9,14 +9,14 @@ If you do not know what decorative font to write a small word in your design, fo
 
 The string must be at least 1 character. And the maximum is limited to one, rather large sentence, which should be enough to evaluate how several words will be combined.
 
-## 🧲 How to use it?
+## 🧶 How to use it?
 Just write a few words and you can see what it looks like using a randomly generated font. 
 To generate a new font, use the **generate button**. 
 It is possible to specify *font styles*. 
 The list of all fonts is from the open source, [Google Fonts](https://fonts.google.com). 
 If you find a great font for your design, then you can click the button to go to the font page and download it.
 
-## Why is it better than similar ones?
+## 💎 Why is it better than similar ones?
 By using this tool you will always focus on *ONE* font only, which cannot be said for other sites. 
 As a rule, a large number of fonts are immediately displayed on the screen and because of this your attention is scattered and you may miss the font that would be best for you.
 
