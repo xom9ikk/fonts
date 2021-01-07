@@ -52,6 +52,7 @@
     "@types/redux-thunk": "^2.1.0",
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.10.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-airbnb-typescript": "^7.2.1",
@@ -63,5 +64,10 @@
     "redux-devtools-extension": "^2.13.8",
     "typescript": "^3.9.3",
     "webpack-bundle-analyzer": "^3.8.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
