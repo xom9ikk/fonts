@@ -1,44 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href='https://fonts.xom9ik.com'>Fonts - Be inspired with awesome fonts</a>
+</p>
+<p align="center"><img src='https://github.com/xom9ikk/fonts/raw/master/screenshots/main.png' alt='Fonts Screenshot' aria-label='fonts.xom9ik.com' /></p>
 
-## Available Scripts
+# For users 😀
+Fonts is a tool for choosing **beautiful fonts**.
+If you do not know what decorative font to write a small word in your design, for example a nickname, then this tool should help with that.
 
-In the project directory, you can run:
+The string must be at least 1 character. And the maximum is limited to one, rather large sentence, which should be enough to evaluate how several words will be combined.
 
-### `yarn start`
+## 🧲 How to use it?
+Just write a few words and you can see what it looks like using a randomly generated font. 
+To generate a new font, use the **generate button**. 
+It is possible to specify *font styles*. 
+The list of all fonts is from the open source, [Google Fonts](https://fonts.google.com). 
+If you find a great font for your design, then you can click the button to go to the font page and download it.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Why is it better than similar ones?
+By using this tool you will always focus on *ONE* font only, which cannot be said for other sites. 
+As a rule, a large number of fonts are immediately displayed on the screen and because of this your attention is scattered and you may miss the font that would be best for you.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+# For developers 🤔
 
-### `yarn test`
+## Installation and Development server
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone repo
+```bash
+$ git clone https://github.com/xom9ikk/fonts.git
+```
 
-### `yarn build`
+Install the dependencies
+```bash
+$ npm i
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Run in `dev` mode with hot reload. `dev` server will run at `http://localhost:3000`
+```bash
+$ npm run start
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Build for `production`. Static files will be created in `dist` folder.
+```bash
+$ npm run build
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[MIT](LICENSE.md)
