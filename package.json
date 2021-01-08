@@ -26,7 +26,6 @@
   "bugs": {
     "url": "https://github.com/xom9ikk/fonts/issues"
   },
-  "homepage": "https://github.com/xom9ikk/fonts#readme",
   "eslintConfig": {
     "extends": "react-app"
   },
