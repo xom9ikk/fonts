@@ -2,8 +2,8 @@ version: "3.5"
 services:
   fonts-prod:
     image: fonts-prod
+    restart: always
     container_name: fonts-prod
-      restart: always
     build:
       context: ./
       dockerfile: Dockerfile
