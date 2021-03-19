@@ -3,6 +3,7 @@ services:
   fonts-prod:
     image: fonts-prod
     container_name: fonts-prod
+      restart: always
     build:
       context: ./
       dockerfile: Dockerfile
