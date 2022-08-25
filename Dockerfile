@@ -2,7 +2,7 @@ FROM node:12-alpine as build
 WORKDIR /app
 COPY . /app
 ENV PATH /app/node_modules/.bin:$PATH
-RUN apk --no-cache add g++ gcc libgcc libstdc++ linux-headers make python
+RUN apk --no-cache add g++ gcc libgcc libstdc++ linux-headers make python3
 RUN npm install --silent
 RUN npm run build
 
